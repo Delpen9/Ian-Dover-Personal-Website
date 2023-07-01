@@ -1,8 +1,15 @@
+body {
+    height: 300vh; /* Makes the page 3 times the viewport's height */
+    position: relative; /* Needed for correct positioning of the line */
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+    box-sizing: border-box; /* Makes sure padding and border are included in element's total width and height */
+}
+
 .center-dotted-line {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 20vh; /* 10% of viewport height gap at the top */
+    bottom: 20vh; /* 10% of viewport height gap at the bottom */
     left: 50%;
-    border-left: 1px dotted black;
-    height: 100%;
+    border-left: 10px dashed black;
 }
