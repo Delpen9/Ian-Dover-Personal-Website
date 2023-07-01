@@ -1,4 +1,5 @@
 from myportfolio import app
+import subprocess
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    subprocess.run(['python3', 'myportfolio/views.py'])
