@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ian Dover's Portfolio Timeline</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='timeline.css') }}">
-</head>
-<body>
-    <div class="content">
-        <div class="date-1">07-01-2023</div>
-        <div class="circle-1"></div>
-        <div class="right-dashed-line-1"></div>
-        <div class="content-rectangle-1">
-            <p class="header">Created My Portfolio Website
-                <a href="https://github.com/Delpen9/Ian-Dover-Personal-Website/tree/main" class="link" target="_blank">(link)</a>
-            </p>
-        </div>
-        <div class="smooth-rectangle-1"></div>
-    
-        <div class="circle-2"></div>
-        <div class="left-dashed-line-1"></div>
-        <div class="content-rectangle-2"></div>
-        <div class="smooth-rectangle-2"></div>
-    
-        <div class="circle-3"></div>
-        <div class="right-dashed-line-2"></div>
-        <div class="content-rectangle-3"></div>
-        <div class="smooth-rectangle-3"></div>
+{% extends "navbar.html" %}
 
-        <div class="circle-4"></div>
-        <div class="left-dashed-line-2"></div>
-        <div class="content-rectangle-4"></div>
-        <div class="smooth-rectangle-4"></div>
+{% block content %}
+<div class="content">
+    <div class="date-1">07-01-2023</div>
+    <div class="circle-1"></div>
+    <div class="right-dashed-line-1"></div>
+    <div class="content-rectangle-1">
+        <p class="header">Created My Portfolio Website
+            <a href="https://github.com/Delpen9/Ian-Dover-Personal-Website/tree/main" class="link" target="_blank">(link)</a>
+        </p>
     </div>
+    <div class="smooth-rectangle-1"></div>
 
-    <div class="dashed-line"></div>
+    <div class="circle-2"></div>
+    <div class="left-dashed-line-1"></div>
+    <div class="content-rectangle-2"></div>
+    <div class="smooth-rectangle-2"></div>
 
-</body>
-</html>
+    <div class="circle-3"></div>
+    <div class="right-dashed-line-2"></div>
+    <div class="content-rectangle-3"></div>
+    <div class="smooth-rectangle-3"></div>
+
+    <div class="circle-4"></div>
+    <div class="left-dashed-line-2"></div>
+    <div class="content-rectangle-4"></div>
+    <div class="smooth-rectangle-4"></div>
+</div>
+
+<div class="dashed-line"></div>
+{% endblock %}
