@@ -64,14 +64,15 @@ body {
 .date-1 {
     position: absolute;
     top: 40vh;
-    left: 38vw;
+    left: 37vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
-    height: 4.8vw; /* Adjust the size of the circle */
-    font-size: 3vw;
+    height: 3.0vw; /* Adjust the size of the circle */
+    font-size: 2.0vw;
     text-align: center;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
     z-index: 1;
 }
 
@@ -94,6 +95,10 @@ body {
     transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
 }
 
+.date-1:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+}
+
 .right-dashed-line-1 {
     position: absolute;
     top: 40vh;
@@ -113,6 +118,9 @@ body {
 }
 
 .content-rectangle-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 40vh;
     left: 83vw;
@@ -124,7 +132,7 @@ body {
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     color: #ffffff;
     transition: transform 1.0s ease;
-    font-size: 1.5vw;
+    font-size: 4vw;
     z-index: 2;
 }
 
