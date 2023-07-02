@@ -66,6 +66,23 @@ body {
     z-index: 0;
 }
 
+.content-rectangle-1 {
+    position: absolute;
+    top: 40vh;
+    left: 83vw;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* Adjust the size of the circle */
+    height: 15vw; /* Adjust the size of the circle */
+    border-radius: 0%;
+    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    transition: transform 1.0s ease;
+    z-index: 1;
+}
+
+.content-rectangle-1:hover {
+    transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+}
+
 .smooth-rectangle-1 {
     position: absolute;
     top: 60vh;
@@ -116,6 +133,23 @@ body {
     z-index: 0;
 }
 
+.content-rectangle-2 {
+    position: absolute;
+    top: 80vh;
+    left: 15vw;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* Adjust the size of the circle */
+    height: 15vw; /* Adjust the size of the circle */
+    border-radius: 0%;
+    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    transition: transform 1.0s ease;
+    z-index: 1;
+}
+
+.content-rectangle-2:hover {
+    transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+}
+
 .smooth-rectangle-2 {
     position: absolute;
     top: 100vh;
@@ -164,6 +198,23 @@ body {
         #0000007c 20px
     );
     z-index: 0;
+}
+
+.content-rectangle-3 {
+    position: absolute;
+    top: 120vh;
+    left: 83vw;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* Adjust the size of the circle */
+    height: 15vw; /* Adjust the size of the circle */
+    border-radius: 0%;
+    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    transition: transform 1.0s ease;
+    z-index: 1;
+}
+
+.content-rectangle-3:hover {
+    transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
 }
 
 .smooth-rectangle-3 {
