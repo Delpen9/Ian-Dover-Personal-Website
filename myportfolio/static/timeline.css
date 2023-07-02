@@ -6,10 +6,106 @@ body {
     box-sizing: border-box; /* Makes sure padding and border are included in element's total width and height */
 }
 
-.center-dotted-line {
+.content {
+    position: relative;
+    z-index: 1;
+}
+  
+.dashed-line {
     position: absolute;
-    top: 20vh; /* 10% of viewport height gap at the top */
-    bottom: 20vh; /* 10% of viewport height gap at the bottom */
+    top: 40vh;
     left: 50%;
-    border-left: 10px dashed black;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 2px;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 10px,
+        #000 10px,
+        #000 20px
+    );
+    z-index: 0;
+}
+
+.circle-1 {
+    position: absolute;
+    top: 40vh; /* Adjust the desired vertical height */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 3vw; /* Adjust the size of the circle */
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 52);
+    background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.smooth-rectangle-1 {
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 10vw; /* Adjust the size of the circle */
+    border-radius: 20%;
+    background-color: rgb(44, 44, 52); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.circle-2 {
+    position: absolute;
+    top: 80vh; /* Adjust the desired vertical height */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 3vw; /* Adjust the size of the circle */
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 52);
+    background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.smooth-rectangle-2 {
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 10vw; /* Adjust the size of the circle */
+    border-radius: 20%;
+    background-color: rgb(44, 44, 52); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.circle-3 {
+    position: absolute;
+    top: 120vh; /* Adjust the desired vertical height */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 3vw; /* Adjust the size of the circle */
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 52);
+    background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.smooth-rectangle-3 {
+    position: absolute;
+    top: 140vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw; /* Adjust the size of the circle */
+    height: 10vw; /* Adjust the size of the circle */
+    border-radius: 20%;
+    background-color: rgb(44, 44, 52); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
