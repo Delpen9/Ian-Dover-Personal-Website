@@ -104,6 +104,7 @@ body {
     border-radius: 0%;
     background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
     transition: transform 1.0s ease;
+    font-size: 1.5vw;
     z-index: 2;
 }
 
@@ -171,6 +172,7 @@ body {
     border-radius: 0%;
     background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
     transition: transform 1.0s ease;
+    font-size: 1.5vw;
     z-index: 1;
 }
 
@@ -238,6 +240,7 @@ body {
     border-radius: 0%;
     background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
     transition: transform 1.0s ease;
+    font-size: 1.5vw;
     z-index: 1;
 }
 
@@ -305,6 +308,7 @@ body {
     border-radius: 0%;
     background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
     transition: transform 1.0s ease;
+    font-size: 1.5vw;
     z-index: 1;
 }
 
