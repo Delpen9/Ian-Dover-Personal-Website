@@ -24,13 +24,31 @@ body {
 .link:hover {
     text-decoration: none;
 }
+
+.top-rectangle-1 {
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(105, 88, 200); /* change this color as per your requirement */
+}
+
+.top-rectangle-2 {
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(156, 146, 211); /* change this color as per your requirement */
+}
+
+.top-rectangle-3 {
+    height: 1vh;
+    width: 100%;
+    background-color: rgb(188, 183, 213); /* change this color as per your requirement */
+}
   
 .dashed-line {
     position: absolute;
     top: 40vh;
     left: 50%;
     transform: translateX(-50%);
-    height: 140vh;
+    height: 160vh;
     width: 2px;
     background-color: transparent;
     background-image: repeating-linear-gradient(
@@ -49,7 +67,7 @@ body {
     left: 38vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
-    height: 3.5vw; /* Adjust the size of the circle */
+    height: 4.8vw; /* Adjust the size of the circle */
     font-size: 3vw;
     text-align: center;
     align-items: center;
@@ -101,8 +119,10 @@ body {
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
-    border-radius: 0%;
-    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    border-radius: 5%;
+    background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
     transition: transform 1.0s ease;
     font-size: 1.5vw;
     z-index: 2;
@@ -169,8 +189,9 @@ body {
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
-    border-radius: 0%;
-    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    border-radius: 5%;
+    background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1.0s ease;
     font-size: 1.5vw;
     z-index: 1;
@@ -237,8 +258,9 @@ body {
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
-    border-radius: 0%;
-    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    border-radius: 5%;
+    background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1.0s ease;
     font-size: 1.5vw;
     z-index: 1;
@@ -305,8 +327,9 @@ body {
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
-    border-radius: 0%;
-    background-color: rgb(201, 201, 201); /* Adjust the color of the circle */
+    border-radius: 5%;
+    background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1.0s ease;
     font-size: 1.5vw;
     z-index: 1;
