@@ -43,6 +43,20 @@ body {
     z-index: 0;
 }
 
+.date-1 {
+    position: absolute;
+    top: 40vh;
+    left: 38vw;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* Adjust the size of the circle */
+    height: 3.5vw; /* Adjust the size of the circle */
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
 .circle-1 {
     position: absolute;
     top: 40vh; /* Adjust the desired vertical height */
@@ -94,7 +108,7 @@ body {
 }
 
 .content-rectangle-1:hover {
-    transform: translate(-90%, -50%) scale(2.0); /* Adjust the scale value for the expansion */
+    transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
 }
 
 .smooth-rectangle-1 {
