@@ -1,11 +1,7 @@
 .nav-addon {
     position: fixed;
     width: 100%;
-    z-index: 5;
-}
-
-.custom-navbar {
-    z-index: 5;
+    z-index: 1;
 }
 
 .custom-font-size {

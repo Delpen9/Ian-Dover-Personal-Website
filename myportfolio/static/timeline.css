@@ -115,7 +115,7 @@ body {
     color: #ffffff;
     transition: transform 1.0s ease;
     font-size: 4vw;
-    z-index: 2;
+    z-index: 3;
 }
 
 .content-rectangle-1:hover {

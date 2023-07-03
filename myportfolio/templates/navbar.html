@@ -52,5 +52,14 @@
             $('.top-rectangle-3').css('height', newHeightRect3 + 'vh');
         });
     </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+                $('.nav-addon').css('z-index', 10);
+            } else {
+                $('.nav-addon').css('z-index', 1);
+            }
+        });
+    </script>
 </body>
 </html>
