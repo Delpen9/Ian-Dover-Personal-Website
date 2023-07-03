@@ -1,5 +1,11 @@
+.nav-addon {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
 .custom-navbar {
-    z-index: 3;
+    z-index: 5;
 }
 
 .custom-font-size {
@@ -8,4 +14,28 @@
 
 .custom-font-size-2 {
     font-size: 24px;  /* You can adjust this value as needed */
+}
+
+.top-rectangle-1 {
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(105, 88, 200); /* change this color as per your requirement */
+    z-index: 2;
+    transition: height 0.4s ease;
+}
+
+.top-rectangle-2 {
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(156, 146, 211); /* change this color as per your requirement */
+    z-index: 2;
+    transition: height 0.4s ease;
+}
+
+.top-rectangle-3 {
+    height: 1vh;
+    width: 100%;
+    background-color: rgb(188, 183, 213); /* change this color as per your requirement */
+    z-index: 2;
+    transition: height 0.4s ease;
 }

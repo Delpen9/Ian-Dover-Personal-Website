@@ -13,19 +13,25 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='navbar.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar flex-column">
-        <a class="navbar-brand mx-auto custom-font-size" href="#">Professional Timeline</a>
-        <div class="navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item me-5">
-                    <a class="nav-link custom-font-size-2" href="/">Bio &nbsp;</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-font-size-2" href="/timeline">Timeline</a>
-                </li>
-            </ul>
-        </div>
-    </nav>    
+    <div class="nav-addon">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar flex-column">
+            <a class="navbar-brand mx-auto custom-font-size" href="#">Professional Timeline</a>
+            <div class="navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item me-5">
+                        <a class="nav-link custom-font-size-2" href="/">Bio &nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-font-size-2" href="/timeline">Timeline</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="top-rectangle-1"></div>
+        <div class="top-rectangle-2"></div>
+        <div class="top-rectangle-3"></div>
+    </div>
 
     <!-- Your page content goes here -->
     {% block content %}
@@ -35,5 +41,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+            var scrollPosInVh = $(this).scrollTop() / $(this).height() * 100;
+            var newHeightRect1 = Math.max(0, 5 - scrollPosInVh); /* Replace 0 with minimum height in vh if required */
+            var newHeightRect2 = Math.max(0, 3 - scrollPosInVh); /* Replace 0 with minimum height in vh if required */
+            var newHeightRect3 = Math.max(0, 1 - scrollPosInVh); /* Replace 0 with minimum height in vh if required */
+            $('.top-rectangle-1').css('height', newHeightRect1 + 'vh');
+            $('.top-rectangle-2').css('height', newHeightRect2 + 'vh');
+            $('.top-rectangle-3').css('height', newHeightRect3 + 'vh');
+        });
+    </script>
 </body>
 </html>

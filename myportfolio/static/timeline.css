@@ -24,24 +24,6 @@ body {
 .link:hover {
     text-decoration: none;
 }
-
-.top-rectangle-1 {
-    height: 5vh;
-    width: 100%;
-    background-color: rgb(105, 88, 200); /* change this color as per your requirement */
-}
-
-.top-rectangle-2 {
-    height: 3vh;
-    width: 100%;
-    background-color: rgb(156, 146, 211); /* change this color as per your requirement */
-}
-
-.top-rectangle-3 {
-    height: 1vh;
-    width: 100%;
-    background-color: rgb(188, 183, 213); /* change this color as per your requirement */
-}
   
 .dashed-line {
     position: absolute;
@@ -63,7 +45,7 @@ body {
 
 .date-1 {
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     left: 37vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
@@ -78,7 +60,7 @@ body {
 
 .circle-1 {
     position: absolute;
-    top: 40vh; /* Adjust the desired vertical height */
+    top: 50vh; /* Adjust the desired vertical height */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -101,7 +83,7 @@ body {
 
 .right-dashed-line-1 {
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     left: 50%;
     transform: translate(-0%, -50%);
     width: 20vw;
@@ -122,7 +104,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     left: 83vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
@@ -142,7 +124,7 @@ body {
 
 .smooth-rectangle-1 {
     position: absolute;
-    top: 60vh;
+    top: 70vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -155,7 +137,7 @@ body {
 
 .circle-2 {
     position: absolute;
-    top: 80vh; /* Adjust the desired vertical height */
+    top: 90vh; /* Adjust the desired vertical height */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -174,7 +156,7 @@ body {
 
 .left-dashed-line-1 {
     position: absolute;
-    top: 80vh;
+    top: 90vh;
     left: 50%;
     transform: translate(-100%, -50%);
     width: 20vw;
@@ -192,7 +174,7 @@ body {
 
 .content-rectangle-2 {
     position: absolute;
-    top: 80vh;
+    top: 90vh;
     left: 15vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
@@ -211,7 +193,7 @@ body {
 
 .smooth-rectangle-2 {
     position: absolute;
-    top: 100vh;
+    top: 110vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -224,7 +206,7 @@ body {
 
 .circle-3 {
     position: absolute;
-    top: 120vh; /* Adjust the desired vertical height */
+    top: 130vh; /* Adjust the desired vertical height */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -243,7 +225,7 @@ body {
 
 .right-dashed-line-2 {
     position: absolute;
-    top: 120vh;
+    top: 130vh;
     left: 50%;
     transform: translate(-0%, -50%);
     width: 20vw;
@@ -261,7 +243,7 @@ body {
 
 .content-rectangle-3 {
     position: absolute;
-    top: 120vh;
+    top: 130vh;
     left: 83vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
@@ -280,7 +262,7 @@ body {
 
 .smooth-rectangle-3 {
     position: absolute;
-    top: 140vh;
+    top: 150vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -293,7 +275,7 @@ body {
 
 .circle-4 {
     position: absolute;
-    top: 160vh; /* Adjust the desired vertical height */
+    top: 170vh; /* Adjust the desired vertical height */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -312,7 +294,7 @@ body {
 
 .left-dashed-line-2 {
     position: absolute;
-    top: 160vh;
+    top: 170vh;
     left: 50%;
     transform: translate(-100%, -50%);
     width: 20vw;
@@ -330,7 +312,7 @@ body {
 
 .content-rectangle-4 {
     position: absolute;
-    top: 160vh;
+    top: 170vh;
     left: 15vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
@@ -349,7 +331,7 @@ body {
 
 .smooth-rectangle-4 {
     position: absolute;
-    top: 180vh;
+    top: 190vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 3vw; /* Adjust the size of the circle */
@@ -358,4 +340,28 @@ body {
     background-color: rgb(44, 44, 52); /* Adjust the color of the circle */
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     z-index: 1;
+}
+
+.bottom-rectangle-1 {
+    position: fixed;
+    bottom: 4;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(105, 88, 200); /* change this color as per your requirement */
+}
+
+.bottom-rectangle-2 {
+    position: fixed;
+    bottom: 1;
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(156, 146, 211); /* change this color as per your requirement */
+}
+
+.bottom-rectangle-3 {
+    position: fixed;
+    bottom: 0;
+    height: 1vh;
+    width: 100%;
+    background-color: rgb(188, 183, 213); /* change this color as per your requirement */
 }
