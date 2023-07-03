@@ -265,7 +265,7 @@ body {
 
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
-    
+
     border-radius: 5%;
     background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
@@ -328,17 +328,24 @@ body {
 }
 
 .content-rectangle-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 4vw;
+
     position: absolute;
     top: 170vh;
     left: 15vw;
     transform: translate(-50%, -50%);
+
     width: 25vw; /* Adjust the size of the circle */
     height: 15vw; /* Adjust the size of the circle */
+
     border-radius: 5%;
     background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1.0s ease;
-    font-size: 1.5vw;
     z-index: 1;
 }
 
