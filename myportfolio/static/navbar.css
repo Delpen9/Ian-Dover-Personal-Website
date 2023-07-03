@@ -1,7 +1,7 @@
 .nav-addon {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .custom-font-size {
@@ -9,7 +9,8 @@
 }
 
 .custom-font-size-2 {
-    font-size: 24px;  /* You can adjust this value as needed */
+    font-size: 4vh;  /* You can adjust this value as needed */
+    transition: font-size 0.1s ease;
 }
 
 .top-rectangle-1 {
