@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 950px) {
     body {
         height: 300vh; /* Makes the page 3 times the viewport's height */
         position: relative; /* Needed for correct positioning of the line */
@@ -46,7 +46,7 @@
 
     .date-1 {
         position: absolute;
-        top: 25vh;
+        top: 45vh;
         left: 37vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -61,7 +61,7 @@
 
     .circle-1 {
         position: absolute;
-        top: 25vh; /* Adjust the desired vertical height */
+        top: 45vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -84,7 +84,7 @@
 
     .right-dashed-line-1 {
         position: absolute;
-        top: 25vh;
+        top: 45vh;
         left: 50%;
         transform: translate(-0%, -50%);
         width: 20vw;
@@ -108,7 +108,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 25vh;
+        top: 45vh;
         left: 83vw;
         transform: translate(-50%, -50%);
 
@@ -128,7 +128,7 @@
 
     .date-2 {
         position: absolute;
-        top: 45vh;
+        top: 65vh;
         left: 61vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -143,7 +143,7 @@
 
     .circle-2 {
         position: absolute;
-        top: 45vh; /* Adjust the desired vertical height */
+        top: 65vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -166,7 +166,7 @@
 
     .left-dashed-line-1 {
         position: absolute;
-        top: 45vh;
+        top: 65vh;
         left: 50%;
         transform: translate(-100%, -50%);
         width: 20vw;
@@ -190,7 +190,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 45vh;
+        top: 65vh;
         left: 15vw;
         transform: translate(-50%, -50%);
 
@@ -210,7 +210,7 @@
 
     .date-3 {
         position: absolute;
-        top: 65vh;
+        top: 85vh;
         left: 37vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -225,7 +225,7 @@
 
     .circle-3 {
         position: absolute;
-        top: 65vh; /* Adjust the desired vertical height */
+        top: 85vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -248,7 +248,7 @@
 
     .right-dashed-line-2 {
         position: absolute;
-        top: 65vh;
+        top: 85vh;
         left: 50%;
         transform: translate(-0%, -50%);
         width: 20vw;
@@ -272,7 +272,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 65vh;
+        top: 85vh;
         left: 83vw;
         transform: translate(-50%, -50%);
 
@@ -292,7 +292,7 @@
 
     .date-4 {
         position: absolute;
-        top: 85vh;
+        top: 105vh;
         left: 61vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -307,7 +307,7 @@
 
     .circle-4 {
         position: absolute;
-        top: 85vh; /* Adjust the desired vertical height */
+        top: 105vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -330,7 +330,7 @@
 
     .left-dashed-line-2 {
         position: absolute;
-        top: 85vh;
+        top: 105vh;
         left: 50%;
         transform: translate(-100%, -50%);
         width: 20vw;
@@ -354,7 +354,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 85vh;
+        top: 105vh;
         left: 15vw;
         transform: translate(-50%, -50%);
 
@@ -374,7 +374,7 @@
 
     .date-5 {
         position: absolute;
-        top: 105vh;
+        top: 125vh;
         left: 37vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -389,7 +389,7 @@
 
     .circle-5 {
         position: absolute;
-        top: 105vh; /* Adjust the desired vertical height */
+        top: 125vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -412,7 +412,7 @@
 
     .right-dashed-line-3 {
         position: absolute;
-        top: 105vh;
+        top: 125vh;
         left: 50%;
         transform: translate(-0%, -50%);
         width: 20vw;
@@ -436,7 +436,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 105vh;
+        top: 125vh;
         left: 83vw;
         transform: translate(-50%, -50%);
 
@@ -456,7 +456,7 @@
 
     .date-6 {
         position: absolute;
-        top: 125vh;
+        top: 145vh;
         left: 61vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -471,7 +471,7 @@
 
     .circle-6 {
         position: absolute;
-        top: 125vh; /* Adjust the desired vertical height */
+        top: 145vh; /* Adjust the desired vertical height */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 3vw; /* Adjust the size of the circle */
@@ -494,7 +494,7 @@
 
     .left-dashed-line-3 {
         position: absolute;
-        top: 125vh;
+        top: 145vh;
         left: 50%;
         transform: translate(-100%, -50%);
         width: 20vw;
@@ -518,7 +518,7 @@
         font-size: 4vw;
 
         position: absolute;
-        top: 125vh;
+        top: 145vh;
         left: 15vw;
         transform: translate(-50%, -50%);
 
