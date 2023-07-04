@@ -1,0 +1,538 @@
+@media (max-width: 600px) {
+    body {
+        height: 300vh; /* Makes the page 3 times the viewport's height */
+        position: relative; /* Needed for correct positioning of the line */
+        margin: 0; /* Removes default body margins */
+        padding: 0; /* Removes default body padding */
+        box-sizing: border-box; /* Makes sure padding and border are included in element's total width and height */
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .link {
+        color: blue;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .link:hover {
+        text-decoration: none;
+    }
+    
+    .dashed-line {
+        position: absolute;
+        top: 40vh;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 110vh;
+        width: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to bottom,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .date-1 {
+        position: absolute;
+        top: 50vh;
+        left: 37vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-1 {
+        position: absolute;
+        top: 50vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-1:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-1:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .right-dashed-line-1 {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-0%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 50vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 3;
+    }
+
+    .content-rectangle-1:hover {
+        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-2 {
+        position: absolute;
+        top: 90vh;
+        left: 61vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-2 {
+        position: absolute;
+        top: 90vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-2:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-2:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .left-dashed-line-1 {
+        position: absolute;
+        top: 90vh;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 90vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-2:hover {
+        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-3 {
+        position: absolute;
+        top: 130vh;
+        left: 37vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-3 {
+        position: absolute;
+        top: 130vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-3:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-3:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .right-dashed-line-2 {
+        position: absolute;
+        top: 130vh;
+        left: 50%;
+        transform: translate(-0%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 130vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-3:hover {
+        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-4 {
+        position: absolute;
+        top: 170vh;
+        left: 61vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-4 {
+        position: absolute;
+        top: 170vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgb(82, 209, 213); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-4:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-4:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .left-dashed-line-2 {
+        position: absolute;
+        top: 170vh;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 170vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-4:hover {
+        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-5 {
+        position: absolute;
+        top: 210vh;
+        left: 37vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-5 {
+        position: absolute;
+        top: 210vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-5:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-5:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .right-dashed-line-3 {
+        position: absolute;
+        top: 210vh;
+        left: 50%;
+        transform: translate(-0%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 210vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-5:hover {
+        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-6 {
+        position: absolute;
+        top: 250vh;
+        left: 61vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 2.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-6 {
+        position: absolute;
+        top: 250vh; /* Adjust the desired vertical height */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3vw; /* Adjust the size of the circle */
+        height: 3vw; /* Adjust the size of the circle */
+        border-radius: 50%;
+        border: 2px solid rgb(44, 44, 52);
+        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .circle-6:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .date-6:hover {
+        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+
+    .left-dashed-line-3 {
+        position: absolute;
+        top: 250vh;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        width: 20vw;
+        height: 2px;
+        background-color: transparent;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 10px,
+            #0000007c 10px,
+            #0000007c 20px
+        );
+        z-index: 0;
+    }
+
+    .content-rectangle-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 250vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-6:hover {
+        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+    }
+}
