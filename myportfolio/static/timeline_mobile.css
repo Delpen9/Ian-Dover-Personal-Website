@@ -536,3 +536,233 @@
         transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
     }
 }
+
+@media (max-width: 650px) {
+    .content-rectangle-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 45vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 3;
+    }
+
+    .content-rectangle-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 65vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 85vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 105vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 125vh;
+        left: 83vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .content-rectangle-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-top: 1.5vh;
+        font-size: 4vw;
+
+        position: absolute;
+        top: 145vh;
+        left: 15vw;
+        transform: translate(-50%, -50%);
+
+        width: 25vw; /* Adjust the size of the circle */
+        height: 15vw; /* Adjust the size of the circle */
+
+        border-radius: 5%;
+        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 1.0s ease;
+        z-index: 1;
+    }
+
+    .date-1 {
+        position: absolute;
+        top: 43.5vh;
+        left: 32vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .date-2 {
+        position: absolute;
+        top: 63.5vh;
+        left: 66vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .date-3 {
+        position: absolute;
+        top: 83.5vh;
+        left: 32vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .date-4 {
+        position: absolute;
+        top: 103.5vh;
+        left: 66vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .date-5 {
+        position: absolute;
+        top: 123.5vh;
+        left: 32vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .date-6 {
+        position: absolute;
+        top: 143.5vh;
+        left: 66vw;
+        transform: translate(-50%, -50%);
+        width: 25vw; /* Adjust the size of the circle */
+        height: 3.0vw; /* Adjust the size of the circle */
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+}

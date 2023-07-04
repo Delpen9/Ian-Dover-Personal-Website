@@ -45,6 +45,47 @@
     }
     
     .custom-font-size {
+        font-size: 6vh;  /* You can adjust this value as needed */
+    }
+    
+    .custom-font-size-2 {
+        font-size: 4vh;  /* You can adjust this value as needed */
+        transition: font-size 0.1s ease;
+    }
+    
+    .top-rectangle-1 {
+        height: 5vh;
+        width: 100%;
+        background-color: rgb(105, 88, 200); /* change this color as per your requirement */
+        z-index: 2;
+        transition: height 0.4s ease;
+    }
+    
+    .top-rectangle-2 {
+        height: 3vh;
+        width: 100%;
+        background-color: rgb(156, 146, 211); /* change this color as per your requirement */
+        z-index: 2;
+        transition: height 0.4s ease;
+    }
+    
+    .top-rectangle-3 {
+        height: 1vh;
+        width: 100%;
+        background-color: rgb(188, 183, 213); /* change this color as per your requirement */
+        z-index: 2;
+        transition: height 0.4s ease;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-addon {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .custom-font-size {
         font-size: 4vh;  /* You can adjust this value as needed */
     }
     
