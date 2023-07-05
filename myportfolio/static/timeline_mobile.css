@@ -28,10 +28,10 @@
     
     .dashed-line {
         position: absolute;
-        top: 40vh;
+        top: 0vh;
         left: 50%;
         transform: translateX(-50%);
-        height: 110vh;
+        height: 160vh;
         width: 2px;
         background-color: transparent;
         background-image: repeating-linear-gradient(
@@ -678,7 +678,7 @@
 
     .date-1 {
         position: absolute;
-        top: 43.5vh;
+        top: 44vh;
         left: 32vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -693,8 +693,8 @@
 
     .date-2 {
         position: absolute;
-        top: 63.5vh;
-        left: 66vw;
+        top: 64vh;
+        left: 68vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
         height: 3.0vw; /* Adjust the size of the circle */
@@ -708,7 +708,7 @@
 
     .date-3 {
         position: absolute;
-        top: 83.5vh;
+        top: 84vh;
         left: 32vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -723,8 +723,8 @@
 
     .date-4 {
         position: absolute;
-        top: 103.5vh;
-        left: 66vw;
+        top: 104vh;
+        left: 68vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
         height: 3.0vw; /* Adjust the size of the circle */
@@ -738,7 +738,7 @@
 
     .date-5 {
         position: absolute;
-        top: 123.5vh;
+        top: 124vh;
         left: 32vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
@@ -753,8 +753,8 @@
 
     .date-6 {
         position: absolute;
-        top: 143.5vh;
-        left: 66vw;
+        top: 144vh;
+        left: 68vw;
         transform: translate(-50%, -50%);
         width: 25vw; /* Adjust the size of the circle */
         height: 3.0vw; /* Adjust the size of the circle */

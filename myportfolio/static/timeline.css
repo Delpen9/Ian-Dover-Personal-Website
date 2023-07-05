@@ -27,10 +27,10 @@ body {
   
 .dashed-line {
     position: absolute;
-    top: 40vh;
+    top: 0vh;
     left: 50%;
     transform: translateX(-50%);
-    height: 220vh;
+    height: 270vh;
     width: 2px;
     background-color: transparent;
     background-image: repeating-linear-gradient(
