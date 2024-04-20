@@ -1,6 +1,7 @@
-.placeholder {
+.image_carousel{
     position: absolute;
     top: 40vh;
+    left: 5vw;
     font-size: 4.0vw;
     text-align: center;
     align-items: center;

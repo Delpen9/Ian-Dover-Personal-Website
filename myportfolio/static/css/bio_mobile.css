@@ -1,0 +1,12 @@
+@media (max-width: 950px) {
+    .image_carousel{
+        position: absolute;
+        top: 35vh;
+        left: 10%;
+        font-size: 4.0vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+}
