@@ -17,7 +17,10 @@
     }
 
     .resume-iframe {
-        width: 80vw;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 60vw;
         height: 50vh;
     }
 
