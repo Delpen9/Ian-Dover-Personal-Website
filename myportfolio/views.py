@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 
 app = Flask(__name__)
@@ -45,6 +45,9 @@ def timeline():
     ]
     return render_template("timeline.html", projects=projects)
 
+@app.route('/resume')
+def resume():
+    return send_from_directory('static/content/resume', 'ian_dover_resume_04_14_24.pdf')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))
