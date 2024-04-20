@@ -14,10 +14,6 @@
 }
 
 .resume-iframe {
-    width: 55vw;
+    width: 100vw;
     height: 80vh;
-}
-
-.resume-info {
-    overflow-x: hidden;
 }
