@@ -1,7 +1,7 @@
 @media (max-width: 950px) {
-    .image_carousel {
+    .bio_content_positioning {
         position: absolute;
-        top: 20%;
+        top: 40%;
         left: 50%; /* Centers horizontally by setting left to 50% of the viewport width */
         transform: translate(-50%, -50%); /* Moves the carousel back by half its width and height */
         font-size: 4.0vw;
@@ -9,5 +9,24 @@
         align-items: center;
         justify-content: center;
         z-index: 5;
+    }
+
+    .download-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 16px; /* Smaller padding */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Smaller font size */
+        margin: 4px 2px; /* Smaller margin */
+        cursor: pointer;
+        border-radius: 4px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .download-button:hover {
+        background-color: #45a049; /* Darker shade on hover */
     }
 }
