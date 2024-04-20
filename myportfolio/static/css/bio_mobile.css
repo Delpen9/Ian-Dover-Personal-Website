@@ -1,4 +1,9 @@
 @media (max-width: 950px) {
+    .carousel-item img {
+        height: 60vh;
+        object-fit: cover;
+    }
+
     .bio_content_positioning {
         position: absolute;
         top: 40%;
