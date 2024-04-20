@@ -2,62 +2,18 @@
 
 {% block content %}
 <div class="content">
-    <div class="date-1">07-01-2023</div>
-    <div class="circle-1"></div>
-    <div class="right-dashed-line-1"></div>
-    <a href="https://github.com/Delpen9/Ian-Dover-Personal-Website/tree/main" target="_blank">
-        <div class="content-rectangle-1">
-            <p class="header">Portfolio Website</p>
+    {% for project in projects %}
+    <div class="date-{{ loop.index }}">{{ project.date }}</div>
+    <div class="circle-{{ loop.index }}"></div>
+    <div class="{{ 'left-dashed-line' if loop.index % 2 == 0 else 'right-dashed-line' }}-{{ (loop.index - 1) // 2 + 1 }}"></div>
+    <a href="{{ project.url }}" target="_blank">
+        <div class="content-rectangle-{{ loop.index }}">
+            <p class="header">{{ project.title }}</p>
         </div>
     </a>
-
-    <div class="date-2">06-25-2023</div>
-    <div class="circle-2"></div>
-    <div class="left-dashed-line-1"></div>
-    <a href="https://github.com/Delpen9/Underwriting-Challenge" target="_blank">
-        <div class="content-rectangle-2">
-            <p class="header">Underwriting Challenge</p>
-        </div>
-    </a>
-
-    <div class="date-3">04-29-2023</div>
-    <div class="circle-3"></div>
-    <div class="right-dashed-line-2"></div>
-    <a href="https://github.com/Delpen9/optimization_methods_final" target="_blank">
-        <div class="content-rectangle-3">
-            <p class="header">Optimization Methods</p>
-        </div>
-    </a>
-
-    <div class="date-4">04-20-2023</div>
-    <div class="circle-4"></div>
-    <div class="left-dashed-line-2"></div>
-    <a href="https://github.com/Delpen9/data_compression_experiments" target="_blank">
-        <div class="content-rectangle-4">
-            <p class="header">Data Compression</p>
-        </div>
-    </a>
-
-    <div class="date-5">04-01-2023</div>
-    <div class="circle-5"></div>
-    <div class="right-dashed-line-3"></div>
-    <a href="https://github.com/Delpen9/lasso_ridge_elastic_group_optimization" target="_blank">
-        <div class="content-rectangle-5">
-            <p class="header">Group Optimization</p>
-        </div>
-    </a>
-
-    <div class="date-6">03-20-2023</div>
-    <div class="circle-6"></div>
-    <div class="left-dashed-line-3"></div>
-    <a href="https://github.com/Delpen9/Lagrangian-Optimization-Algorithms/tree/main" target="_blank">
-        <div class="content-rectangle-6">
-            <p class="header">Descent Algorithms</p>
-        </div>
-    </a>
+    {% endfor %}
 </div>
 
 <div class="dashed-line"></div>
-
 
 {% endblock %}
