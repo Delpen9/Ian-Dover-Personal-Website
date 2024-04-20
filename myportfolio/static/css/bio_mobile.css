@@ -29,5 +29,6 @@
     .resume-info {
         margin-top: 5vh;
         padding: 0 15px; /* Adds padding on both sides */
+        overflow-x: hidden;
     }
 }
