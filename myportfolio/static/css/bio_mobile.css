@@ -20,6 +20,8 @@
         display: flex;
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
+        box-sizing: border-box; /* Ensures padding and border are included in the width */
+        border: none; /* Optional, removes the border */
         width: 100vw;
         height: 75vh;
     }
