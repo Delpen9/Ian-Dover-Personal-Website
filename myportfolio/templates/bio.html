@@ -3,8 +3,8 @@
 {% block content %}
 <div class="bio_content_positioning">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-10 col-md-8 col-lg-4">
                 <!-- Carousel Wrapper -->
                 <div id="imageCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -38,14 +38,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="col-10 col-sm-10 col-md-8 col-lg-4">
+                <div style="display: flex; align-items: center;">
                     <h2>Resume</h2>
                     <a href="/resume" download="ian_dover_resume_04_14_24.pdf">
                         <button class="download-button">Download Resume</button>
                     </a>
                 </div>
-                <iframe src="/resume" style="width:100vw; height:100vh;" frameborder="0"></iframe>
+                <iframe src="/resume" class="resume-iframe" frameborder="0"></iframe>
             </div>
         </div>
     </div>

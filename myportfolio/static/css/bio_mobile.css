@@ -4,6 +4,11 @@
         object-fit: cover;
     }
 
+    .resume-iframe {
+        width:90vw;
+        height:100vh;
+    }
+
     .bio_content_positioning {
         position: absolute;
         top: 40%;
