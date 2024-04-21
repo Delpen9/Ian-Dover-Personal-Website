@@ -10,23 +10,23 @@
                     Contact Us
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="/submit-form">  <!-- Added method and action -->
                         <!-- Name input -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">  <!-- Added name attribute -->
                         </div>
                         
                         <!-- Email input -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">  <!-- Added name attribute -->
                         </div>
                         
                         <!-- Message textarea -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>  <!-- Added name attribute -->
                         </div>
                         
                         <!-- Submit button -->
@@ -37,5 +37,6 @@
         </div>
     </div>
 </div>
+
 
 {% endblock %}

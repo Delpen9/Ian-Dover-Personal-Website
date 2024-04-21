@@ -1,8 +1,32 @@
-from flask import Flask, render_template, send_from_directory
 import os
+
+from flask import Flask, render_template, send_from_directory, request, redirect, url_for
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
 
+def send_email(name, email, message):
+    sender_email = "your_email@example.com"
+    receiver_email = "receiver@example.com"
+    password = "your_password"
+
+    msg = MIMEMultipart()
+    msg['From'] = sender_email
+    msg['To'] = receiver_email
+    msg['Subject'] = "New Contact Form Submission"
+    
+    body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
+    msg.attach(MIMEText(body, 'plain'))
+    
+    server = smtplib.SMTP('smtp.example.com', 587)  # Use the appropriate SMTP server
+    server.starttls()
+    server.login(sender_email, password)
+    text = msg.as_string()
+    server.sendmail(sender_email, receiver_email, text)
+    server.quit()
 
 @app.route("/")
 def bio():
@@ -52,6 +76,19 @@ def contact():
 @app.route('/resume')
 def resume():
     return send_from_directory('static/content/resume', 'ian_dover_resume_04_20_24.pdf')
+
+@app.route('/submit-form', methods=['POST'])
+def submit_form():
+    try:
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+
+        send_email(name, email, message)
+        return redirect(url_for('contact'))  # Redirects back to the contact page on successful email send
+    except Exception as e:
+        print(e)  # Optionally print the error to the console or log it
+        return redirect(url_for('contact'))  # Redirects back to the contact page on error
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))
