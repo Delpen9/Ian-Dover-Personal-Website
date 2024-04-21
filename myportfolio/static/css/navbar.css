@@ -3,6 +3,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.navbar-font-size {
+    font-size: 2rem; /* Larger size for desktop */
+}
+
 .nav-addon {
     position: fixed;
     width: 100%;
