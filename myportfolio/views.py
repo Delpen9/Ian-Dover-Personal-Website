@@ -47,7 +47,7 @@ def timeline():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('static/content/resume', 'ian_dover_resume_04_24_24.pdf')
+    return send_from_directory('static/content/resume', 'ian_dover_resume_04_20_24.pdf')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))
