@@ -45,6 +45,10 @@ def timeline():
     ]
     return render_template("timeline.html", projects=projects)
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 @app.route('/resume')
 def resume():
     return send_from_directory('static/content/resume', 'ian_dover_resume_04_20_24.pdf')
