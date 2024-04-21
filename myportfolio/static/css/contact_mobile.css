@@ -1,0 +1,10 @@
+@media (max-width: 950px) {
+    .contact-me-main {
+        position: absolute;
+        top: 30vh; /* Vertically centers the top at 40% of the viewport height */
+        left: 13%;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+}

@@ -1,0 +1,12 @@
+.contact-me-main {
+    position: absolute;
+    top: 40vh; /* Vertically centers the top at 40% of the viewport height */
+    left: 13%;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+}
