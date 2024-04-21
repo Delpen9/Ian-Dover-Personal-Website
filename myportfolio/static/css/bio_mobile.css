@@ -11,12 +11,11 @@
         object-fit: cover;
         width: 100%;
         height: auto;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
     }
 
     .bio_content_positioning {
         position: absolute;
-        top: 32.5%;
+        top: 35%;
         left: 50%; /* Centers horizontally by setting left to 50% of the viewport width */
         transform: translate(-50%, -50%); /* Moves the carousel back by half its width and height */
         font-size: 4.0vw;
