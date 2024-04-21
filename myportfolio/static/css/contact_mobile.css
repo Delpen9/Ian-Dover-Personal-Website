@@ -7,4 +7,8 @@
         justify-content: center;
         z-index: 5;
     }
+
+    .contact-me-main .card {
+        width: 70%;  /* Reduces the card's width to 90% of its container */
+    }
 }
