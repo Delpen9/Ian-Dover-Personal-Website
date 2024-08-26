@@ -4,11 +4,13 @@
 {% block content %}
 <div class="content">
     {% for project in projects %}
-    <div class="date-{{ loop.index }}">{{ project.date }}</div>
-    <div class="circle-{{ loop.index }}"></div>
-    <div class="{{ 'left-dashed-line' if loop.index % 2 == 0 else 'right-dashed-line' }}-{{ (loop.index - 1) // 2 + 1 }}"></div>
+    <div class="{% if loop.index is odd %}right-date right-date-{% else %}left-date left-date-{% endif %}{{ loop.index }}">
+        {{ project.date }}
+    </div>
+    <div class="{% if loop.index is odd %}right-circle right-circle-{% else %}left-circle left-circle-{% endif %}{{ loop.index }}"></div>
+    <div class="{% if loop.index is odd %}right-dashed-line right-dashed-line-{% else %}left-dashed-line left-dashed-line-{% endif %}{{ loop.index }}"></div>
     <a href="{{ project.url }}" target="_blank">
-        <div class="content-rectangle-{{ loop.index }}">
+        <div class="{% if loop.index is odd %}right-content-rectangle right-content-rectangle-{% else %}left-content-rectangle left-content-rectangle-{% endif %}{{ loop.index }}">
             <p class="header">{{ project.title }}</p>
         </div>
     </a>
@@ -16,5 +18,4 @@
 </div>
 
 <div class="dashed-line"></div>
-
 {% endblock %}

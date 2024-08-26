@@ -38,7 +38,7 @@ def timeline():
     projects = [
         {
             "date": "07-10-2024",
-            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7233911165028810752/",
+            "url": "https://www.parchment.com/u/award/ef2f17b678782a1f5b2b442ea0231623",
             "title": "Georgia Tech Grad",
         },
         {
