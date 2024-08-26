@@ -31,7 +31,7 @@
         top: 0vh;
         left: 50%;
         transform: translateX(-50%);
-        height: 160vh;
+        height: 300vh;
         width: 2px;
         background-color: transparent;
         background-image: repeating-linear-gradient(
@@ -44,725 +44,243 @@
         z-index: 0;
     }
 
-    .date-1 {
-        position: absolute;
-        top: 45vh;
-        left: 37vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
+/* ###################### */
+/* Right content rectangle */
+/* ###################### */
 
-    .circle-1 {
-        position: absolute;
-        top: 45vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-1:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-1:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .right-dashed-line-1 {
-        position: absolute;
-        top: 45vh;
-        left: 50%;
-        transform: translate(-0%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 45vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 3;
-    }
-
-    .content-rectangle-1:hover {
-        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-2 {
-        position: absolute;
-        top: 65vh;
-        left: 61vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-2 {
-        position: absolute;
-        top: 65vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-2:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-2:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .left-dashed-line-1 {
-        position: absolute;
-        top: 65vh;
-        left: 50%;
-        transform: translate(-100%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 65vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-2:hover {
-        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-3 {
-        position: absolute;
-        top: 85vh;
-        left: 37vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-3 {
-        position: absolute;
-        top: 85vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-3:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-3:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .right-dashed-line-2 {
-        position: absolute;
-        top: 85vh;
-        left: 50%;
-        transform: translate(-0%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 85vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-3:hover {
-        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-4 {
-        position: absolute;
-        top: 105vh;
-        left: 61vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-4 {
-        position: absolute;
-        top: 105vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgb(82, 209, 213); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-4:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-4:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .left-dashed-line-2 {
-        position: absolute;
-        top: 105vh;
-        left: 50%;
-        transform: translate(-100%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 105vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-4:hover {
-        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-5 {
-        position: absolute;
-        top: 125vh;
-        left: 37vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-5 {
-        position: absolute;
-        top: 125vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-5:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-5:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .right-dashed-line-3 {
-        position: absolute;
-        top: 125vh;
-        left: 50%;
-        transform: translate(-0%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 125vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-5:hover {
-        transform: translate(-70%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-6 {
-        position: absolute;
-        top: 145vh;
-        left: 61vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 2.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-6 {
-        position: absolute;
-        top: 145vh; /* Adjust the desired vertical height */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 3vw; /* Adjust the size of the circle */
-        height: 3vw; /* Adjust the size of the circle */
-        border-radius: 50%;
-        border: 2px solid rgb(44, 44, 52);
-        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .circle-6:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .date-6:hover {
-        transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
-
-    .left-dashed-line-3 {
-        position: absolute;
-        top: 145vh;
-        left: 50%;
-        transform: translate(-100%, -50%);
-        width: 20vw;
-        height: 2px;
-        background-color: transparent;
-        background-image: repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 10px,
-            #0000007c 10px,
-            #0000007c 20px
-        );
-        z-index: 0;
-    }
-
-    .content-rectangle-6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 145vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-6:hover {
-        transform: translate(-30%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
-    }
+.right-date {
+    position: absolute;
+    top: 0vh;
+    left: 37vw;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* Adjust the size of the circle */
+    height: 3.0vw; /* Adjust the size of the circle */
+    font-size: 2.0vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
 
-@media (max-width: 650px) {
-    .content-rectangle-1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 45vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgba(100, 100, 200); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 3;
-    }
-
-    .content-rectangle-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 65vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(63, 150, 66); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 85vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(181, 65, 65); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 105vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(115, 172, 173); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 125vh;
-        left: 83vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(133, 41, 140); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .content-rectangle-6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        padding-top: 1.5vh;
-        font-size: 4vw;
-
-        position: absolute;
-        top: 145vh;
-        left: 15vw;
-        transform: translate(-50%, -50%);
-
-        width: 25vw; /* Adjust the size of the circle */
-        height: 15vw; /* Adjust the size of the circle */
-
-        border-radius: 5%;
-        background-color: rgb(190, 190, 70); /* Adjust the color of the circle */
-        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 1.0s ease;
-        z-index: 1;
-    }
-
-    .date-1 {
-        position: absolute;
-        top: 44vh;
-        left: 32vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .date-2 {
-        position: absolute;
-        top: 64vh;
-        left: 68vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .date-3 {
-        position: absolute;
-        top: 84vh;
-        left: 32vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .date-4 {
-        position: absolute;
-        top: 104vh;
-        left: 68vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .date-5 {
-        position: absolute;
-        top: 124vh;
-        left: 32vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
-
-    .date-6 {
-        position: absolute;
-        top: 144vh;
-        left: 68vw;
-        transform: translate(-50%, -50%);
-        width: 25vw; /* Adjust the size of the circle */
-        height: 3.0vw; /* Adjust the size of the circle */
-        font-size: 4.0vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 1;
-    }
+.right-circle {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 52);
+    background-color: rgb(133, 41, 140);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
+
+.right-circle:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.right-date:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+}
+
+.right-dashed-line {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    width: 20vw;
+    height: 2px;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 10px,
+        #0000007c 10px,
+        #0000007c 20px
+    );
+    z-index: 0;
+}
+
+.right-content-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 4vw;
+    position: absolute;
+    top: 0vh;
+    left: 83vw;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 15vw;
+    border-radius: 5%;
+    background-color: rgb(133, 41, 140);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 1.0s ease;
+    z-index: 1;
+}
+
+.right-content-rectangle:hover {
+    transform: translate(-70%, -50%) scale(1.5);
+}
+
+/* ###################### */
+/* Left content rectangle */
+/* ###################### */
+
+.left-date {
+    position: absolute;
+    top: 0vh;
+    left: 15vw;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 3.0vw;
+    font-size: 2.0vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.left-circle {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 52);
+    background-color: rgb(63, 150, 66);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.left-circle:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.left-date:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Adjust the scale value for the expansion */
+}
+
+.left-dashed-line {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 20vw;
+    height: 2px;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 10px,
+        #0000007c 10px,
+        #0000007c 20px
+    );
+    z-index: 0;
+}
+
+.left-content-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 4vw;
+
+    position: absolute;
+    top: 0vh;
+    left: 15vw;
+    transform: translate(-50%, -50%);
+
+    width: 25vw;
+    height: 15vw;
+
+    border-radius: 5%;
+    background-color: rgb(63, 150, 66);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 1.0s ease;
+    z-index: 1;
+}
+
+.left-content-rectangle:hover {
+    transform: translate(-30%, -50%) scale(1.5);
+}
+
+/* ###################### */
+
+.right-date-1, .right-circle-1, .right-dashed-line-1, .right-content-rectangle-1 {
+    top: 45vh;
+}
+
+.right-circle-1, .right-content-rectangle-1 {
+    background-color: rgb(70, 130, 180);
+}
+
+/* ###################### */
+
+.left-date-2, .left-circle-2, .left-dashed-line-2, .left-content-rectangle-2 {
+    top: 85vh;
+}
+
+.left-circle-2, .left-content-rectangle-2 {
+    background-color: rgb(255, 127, 80);
+}
+
+/* ###################### */
+
+.right-date-3, .right-circle-3, .right-dashed-line-3, .right-content-rectangle-3 {
+    top: 125vh;
+}
+
+.right-circle-3, .right-content-rectangle-3 {
+    background-color: rgb(150, 123, 182);
+}
+
+/* ###################### */
+
+.left-date-4, .left-circle-4, .left-dashed-line-4, .left-content-rectangle-4 {
+    top: 165vh;
+}
+
+.left-circle-4, .left-content-rectangle-4 {
+    background-color: rgb(152, 251, 152);
+}
+
+/* ###################### */
+
+.right-date-5, .right-circle-5, .right-dashed-line-5, .right-content-rectangle-5 {
+    top: 205vh;
+}
+
+.right-circle-5, .right-content-rectangle-5 {
+    background-color: rgb(255, 99, 71);
+}
+
+/* ###################### */
+
+.left-date-6, .left-circle-6, .left-dashed-line-6, .left-content-rectangle-6 {
+    top: 245vh;
+}
+
+.left-circle-6, .left-content-rectangle-6 {
+    background-color: rgb(238, 232, 170);
+}
+
+/* ###################### */
+
+.right-date-7, .right-circle-7, .right-dashed-line-7, .right-content-rectangle-7 {
+    top: 285vh;
+}
+
+.right-circle-7, .right-content-rectangle-7 {
+    background-color: rgb(205, 92, 92);
+}
+
+/* ###################### */

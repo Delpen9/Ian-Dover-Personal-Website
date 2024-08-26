@@ -130,10 +130,6 @@ body {
 /* Left content rectangle */
 /* ###################### */
 
-:root {
-    --top-value: 90vh; /* Default top value */
-}
-
 .left-date {
     position: absolute;
     top: 0vh;
