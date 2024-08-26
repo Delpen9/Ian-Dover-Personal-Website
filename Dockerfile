@@ -1,19 +1,23 @@
-# start by pulling the python image
+# Start by pulling the python image
 FROM python:3.8-alpine
 
-# copy the requirements file into the image
+# Install poppler-utils
+# This is for pdf to jpg conversion of resume
+RUN apk add --no-cache poppler-utils
+
+# Copy the requirements file into the image
 COPY ./requirements.txt /app/requirements.txt
 
-# switch working directory
+# Switch working directory
 WORKDIR /app
 
-# install the dependencies and packages in the requirements file
-RUN pip install -r requirements.txt
+# Install the dependencies and packages in the requirements file
+RUN pip install --no-cache-dir -r requirements.txt
 
-# copy every content from the local file to the image
+# Copy every content from the local file to the image
 COPY . /app
 
-# configure the container to run in an executed manner
+# Configure the container to run in an executed manner
 ENTRYPOINT [ "python" ]
 
 CMD ["run.py"]
