@@ -75,7 +75,7 @@ def contact():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('static/content/resume', 'ian_dover_resume_04_20_24.pdf')
+    return send_from_directory('static/content/resume', 'Ian_Dover_Resume.pdf')
 
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
