@@ -50,11 +50,11 @@ body {
 .right-date {
     position: absolute;
     top: 0vh;
-    left: 37vw;
+    left: 35vw;
     transform: translate(-50%, -50%);
     width: 25vw; /* Adjust the size of the circle */
     height: 3.0vw; /* Adjust the size of the circle */
-    font-size: 2.0vw;
+    font-size: 3.0vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -133,11 +133,11 @@ body {
 .left-date {
     position: absolute;
     top: 0vh;
-    left: 15vw;
+    left: 65vw;
     transform: translate(-50%, -50%);
     width: 25vw;
     height: 3.0vw;
-    font-size: 2.0vw;
+    font-size: 3.0vw;
     text-align: center;
     align-items: center;
     justify-content: center;
