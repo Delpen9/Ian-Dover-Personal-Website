@@ -37,6 +37,11 @@ def bio():
 def timeline():
     projects = [
         {
+            "date": "07-10-2024",
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7233911165028810752/",
+            "title": "Graduated from Georgia Insitute of Technology",
+        },
+        {
             "date": "07-01-2023",
             "url": "https://github.com/Delpen9/Ian-Dover-Personal-Website/tree/main",
             "title": "Portfolio Website",
