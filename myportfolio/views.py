@@ -39,7 +39,7 @@ def timeline():
         {
             "date": "07-10-2024",
             "url": "https://www.linkedin.com/feed/update/urn:li:activity:7233911165028810752/",
-            "title": "Graduated from Georgia Insitute of Technology",
+            "title": "Georgia Tech Grad",
         },
         {
             "date": "07-01-2023",
