@@ -76,7 +76,7 @@ def send_email(name, email, message):
     # Replace these with your actual email credentials
     sender_email = "iantdover@gmail.com"
     receiver_email = "iantdover@gmail.com"
-    password = base64.b64decode("a2NvYyBueXpoIHdpeWQgY2R6cw==").decode('utf-8')
+    password = base64.b64decode(r"a2NvYyBueXpoIHdpeWQgY2R6cw==").decode('utf-8')
 
     # Set up the MIME
     msg = MIMEMultipart()
