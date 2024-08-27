@@ -82,7 +82,7 @@ def send_email(name, email, message):
     msg = MIMEMultipart()
     msg["From"] = sender_email
     msg["To"] = receiver_email
-    msg["Subject"] = "New Contact Form Submission"
+    msg["Subject"] = "SOMEONE CONTACTED YOU ON IANDOVERPORTFOLIO.COM"
 
     # Create the body of the message
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
