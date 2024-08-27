@@ -125,6 +125,11 @@ def resume():
     return send_from_directory("static/content/resume", "Ian_Dover_Resume.pdf")
 
 
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))
     app.run(debug=True, host="0.0.0.0", port=port)
