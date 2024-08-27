@@ -1,0 +1,17 @@
+body, html {
+    height: 350vh; /* Makes the page 3 times the viewport's height */
+    margin: 0;
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 50vh;
+    padding-top: 35vh; /* Pushes the content down by 40% of the viewport height */
+}
+
+.blog-main {
+    width: 74%; /* Adjust width as needed */
+    z-index: 5;
+}
