@@ -1,4 +1,4 @@
-@media (max-width: 950px) {
+@media (max-aspect-ratio: 1) {
     .container-fluid {
         width: 100%;
         padding-right: 0;
@@ -15,7 +15,7 @@
 
     .bio_content_positioning {
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 50%; /* Centers horizontally by setting left to 50% of the viewport width */
         transform: translate(-50%, -50%); /* Moves the carousel back by half its width and height */
         font-size: 4.0vw;
@@ -23,6 +23,46 @@
         align-items: center;
         justify-content: center;
         z-index: 5;
+    }
+
+    /* For wide screens */
+    @media (min-aspect-ratio: 13/20) and (max-aspect-ratio: 1) {
+        .bio_content_positioning {
+            top: 37.5%;
+            font-size: 3.5vw;
+        }
+    }
+
+    /* For somewhat wide screens */
+    @media (max-aspect-ratio: 10/20) and (max-aspect-ratio: 13/20) {
+        .bio_content_positioning {
+            top: 27.5%;
+            font-size: 4.5vw;
+        }
+    }
+
+    /* For somewhat tall screens */
+    @media (max-aspect-ratio: 7/20) and (max-aspect-ratio: 10/20) {
+        .bio_content_positioning {
+            top: 25%;
+            font-size: 4.5vw;
+        }
+    }
+
+    /* For tall screens */
+    @media (max-aspect-ratio: 4/20) and (max-aspect-ratio: 7/20) {
+        .bio_content_positioning {
+            top: 22.5%;
+            font-size: 4.5vw;
+        }
+    }
+
+    /* For exceptionally tall screens */
+    @media (max-aspect-ratio: 0) and (max-aspect-ratio: 4/20) {
+        .bio_content_positioning {
+            top: 20%;
+            font-size: 4.5vw;
+        }
     }
 
     .resume-iframe {
