@@ -11,7 +11,7 @@
     <div class="{% if loop.index is odd %}right-dashed-line right-dashed-line-{% else %}left-dashed-line left-dashed-line-{% endif %}{{ loop.index }}"></div>
     <a href="{{ project.url }}" target="_blank">
         <div class="{% if loop.index is odd %}right-content-rectangle right-content-rectangle-{% else %}left-content-rectangle left-content-rectangle-{% endif %}{{ loop.index }}">
-            <p class="header">{{ project.title }}</p>
+            <p class="header">{{ project.title + '<br>(Click Me)' | safe }}</p>
         </div>
     </a>
     {% endfor %}
