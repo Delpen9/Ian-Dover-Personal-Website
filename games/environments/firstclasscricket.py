@@ -31,7 +31,7 @@ class FirstClassCricket:
         self.game_over = False
 
     def step(self, player_inputs: dict):
-        assert type(player_inputs) == dict, "player_inputs must be of type dict."
+        assert isinstance(player_inputs, dict), "player_inputs must be of type dict."
         assert len(player_inputs) == 2, "There must be two player inputs."
         
         # Convert the values to a list first
