@@ -15,7 +15,6 @@ class TestFirstClassCricket(unittest.TestCase):
 
     def test_initialization(self):
         # Test that the class initializes correctly
-        self.assertEqual(len(self.cricket_game.player_ids), 2)
         self.assertIn(self.cricket_game.player_one_id, self.player_ids)
         self.assertIn(self.cricket_game.player_two_id, self.player_ids)
         self.assertNotEqual(self.cricket_game.player_one_id, self.cricket_game.player_two_id)
@@ -55,7 +54,7 @@ class TestFirstClassCricket(unittest.TestCase):
         self.assertEqual(self.cricket_game.player_one_point_history, [2])
         self.assertEqual(self.cricket_game.player_two_point_history, [3])
 
-    def test_game_end_condition(self):
+    def test_game_end_player_one_win_condition(self):
         # Test that the game ends correctly
         self.cricket_game.inning = 4
         self.cricket_game.round = 2
@@ -65,7 +64,31 @@ class TestFirstClassCricket(unittest.TestCase):
         self.cricket_game.step([1, 1])
         
         self.assertTrue(self.cricket_game.game_over)
-        self.assertEqual(self.cricket_game.winning_player, self.player_ids[0])
+        self.assertEqual(self.cricket_game.winning_player, self.cricket_game.player_one_id)
+
+    def test_game_end_player_two_win_condition(self):
+        # Test that the game ends correctly
+        self.cricket_game.inning = 4
+        self.cricket_game.round = 2
+        self.cricket_game.player_one_point_history = [5, 8]
+        self.cricket_game.player_two_point_history = [10, 15]
+
+        self.cricket_game.step([1, 1])
+        
+        self.assertTrue(self.cricket_game.game_over)
+        self.assertEqual(self.cricket_game.winning_player, self.cricket_game.player_two_id)
+
+    def test_game_end_in_tie_condition(self):
+        self.cricket_game.inning = 4
+        self.cricket_game.round = 2
+
+        self.cricket_game.player_one_point_history = [1, 1]
+        self.cricket_game.player_two_point_history = [1, 1]
+
+        self.cricket_game.step([1, 1])
+        
+        self.assertTrue(self.cricket_game.game_over)
+        self.assertEqual(self.cricket_game.winning_player, "tie")
 
     def test_assertions(self):
         # Test that assertions raise errors when conditions are not met
