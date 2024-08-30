@@ -43,6 +43,8 @@ class TestFirstClassCricket(unittest.TestCase):
         self.cricket_game.fielding_player = self.cricket_game.player_two_id
 
         self.cricket_game.step({"player_id_X345": 2, "player_id_Y678": 1})
+        self.cricket_game.step({"player_id_X345": 1, "player_id_Y678": 1}) # Conclude inning
+        self.cricket_game.step({"player_id_X345": 0, "player_id_Y678": 1})
 
         if self.cricket_game.player_one_id == "player_id_X345":
             self.assertEqual(self.cricket_game.player_one_point_history, [2])
@@ -55,6 +57,7 @@ class TestFirstClassCricket(unittest.TestCase):
         self.cricket_game.fielding_player = self.cricket_game.player_one_id
 
         self.cricket_game.step({"player_id_X345": 0, "player_id_Y678": 3})
+        self.cricket_game.step({"player_id_X345": 1, "player_id_Y678": 1}) # Conclude inning
 
         if self.cricket_game.player_two_id == "player_id_X345":
             self.assertEqual(self.cricket_game.player_two_point_history, [0])
@@ -97,6 +100,25 @@ class TestFirstClassCricket(unittest.TestCase):
         
         self.assertTrue(self.cricket_game.game_over)
         self.assertEqual(self.cricket_game.winning_player, "tie")
+
+    def test_underdog(self):
+        self.cricket_game.inning = 3
+        self.cricket_game.round = 2
+        self.cricket_game.player_one_point_history = [9, 12]
+        self.cricket_game.player_two_point_history = [10, 16, 32]
+
+        # Overwrite randomization logic
+        self.cricket_game.player_one_id = "player_id_X345"
+        self.cricket_game.player_two_id = "player_id_Y678"
+
+        self.cricket_game.batting_player = self.cricket_game.player_one_id
+        self.cricket_game.fielding_player = self.cricket_game.player_two_id
+
+        self.cricket_game.step({"player_id_X345": 5, "player_id_Y678": 6})
+        self.cricket_game.step({"player_id_X345": 2, "player_id_Y678": 6})
+        self.cricket_game.step({"player_id_X345": 6, "player_id_Y678": 6})
+        
+        self.assertEqual(self.cricket_game.player_one_point_history, [9, 12, 32])
 
     def test_assertions(self):
         # Test that assertions raise errors when conditions are not met
