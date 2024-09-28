@@ -1,5 +1,6 @@
 body {
     height: 200vh; /* Keep this below 200vh */
+    height: 200vh; /* Keep this below 200vh */
     position: relative; /* Needed for correct positioning of the line */
     margin: 0; /* Removes default body margins */
     padding: 0; /* Removes default body padding */
@@ -26,11 +27,13 @@ body {
 }
   
 .dashed-line-svg {
+.dashed-line-svg {
     position: absolute;
+    top: 0;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 300vh;
+    height: 2500px;
     width: 2px;
     z-index: 0;
 }
@@ -218,6 +221,7 @@ body {
 
 .left-date-2, .left-circle-2, .left-dashed-line-2, .left-content-rectangle-2 {
     top: 80vh;
+    top: 80vh;
 }
 
 .left-circle-2, .left-content-rectangle-2 {
@@ -227,6 +231,7 @@ body {
 /* ###################### */
 
 .right-date-3, .right-circle-3, .right-dashed-line-3, .right-content-rectangle-3 {
+    top: 110vh;
     top: 110vh;
 }
 
@@ -238,6 +243,7 @@ body {
 
 .left-date-4, .left-circle-4, .left-dashed-line-4, .left-content-rectangle-4 {
     top: 140vh;
+    top: 140vh;
 }
 
 .left-circle-4, .left-content-rectangle-4 {
@@ -247,6 +253,7 @@ body {
 /* ###################### */
 
 .right-date-5, .right-circle-5, .right-dashed-line-5, .right-content-rectangle-5 {
+    top: 170vh;
     top: 170vh;
 }
 
@@ -258,6 +265,7 @@ body {
 
 .left-date-6, .left-circle-6, .left-dashed-line-6, .left-content-rectangle-6 {
     top: 200vh;
+    top: 200vh;
 }
 
 .left-circle-6, .left-content-rectangle-6 {
@@ -267,6 +275,7 @@ body {
 /* ###################### */
 
 .right-date-7, .right-circle-7, .right-dashed-line-7, .right-content-rectangle-7 {
+    top: 230vh;
     top: 230vh;
 }
 
@@ -278,6 +287,7 @@ body {
 
 .left-date-8, .left-circle-8, .left-dashed-line-8, .left-content-rectangle-8 {
     top: 260vh;
+    top: 260vh;
 }
 
 .left-circle-8, .left-content-rectangle-8 {
@@ -287,6 +297,7 @@ body {
 /* ###################### */
 
 .right-date-9, .right-circle-9, .right-dashed-line-9, .right-content-rectangle-9 {
+    top: 290vh;
     top: 290vh;
 }
 
