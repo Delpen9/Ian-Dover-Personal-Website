@@ -1,6 +1,6 @@
 @media (max-width: 950px) {
     body {
-        height: 450vh; /* Makes the page 3 times the viewport's height */
+        height: 200vh; /* Makes the page 3 times the viewport's height */
         position: relative; /* Needed for correct positioning of the line */
         margin: 0; /* Removes default body margins */
         padding: 0; /* Removes default body padding */

@@ -1,5 +1,5 @@
 body {
-    height: 450vh; /* Makes the page 3 times the viewport's height */
+    height: 200vh; /* Keep this below 200vh */
     position: relative; /* Needed for correct positioning of the line */
     margin: 0; /* Removes default body margins */
     padding: 0; /* Removes default body padding */
