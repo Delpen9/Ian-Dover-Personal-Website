@@ -25,8 +25,7 @@ body {
 .link:hover {
     text-decoration: none;
 }
-  
-.dashed-line-svg {
+
 .dashed-line-svg {
     position: absolute;
     top: 0;
