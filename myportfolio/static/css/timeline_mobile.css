@@ -1,6 +1,7 @@
 @media (max-width: 950px) {
     body {
         height: 200vh; /* Makes the page 3 times the viewport's height */
+        height: 200vh; /* Makes the page 3 times the viewport's height */
         position: relative; /* Needed for correct positioning of the line */
         margin: 0; /* Removes default body margins */
         padding: 0; /* Removes default body padding */
@@ -28,6 +29,7 @@
     
     .dashed-line-svg {
         position: absolute;
+        top: 0;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -193,6 +195,7 @@
 
     width: 30vw;
     height: 30vw;
+    height: 30vw;
 
     border-radius: 5%;
     background-color: rgb(63, 150, 66);
@@ -219,6 +222,7 @@
 
 .left-date-2, .left-circle-2, .left-dashed-line-2, .left-content-rectangle-2 {
     top: 65vh;
+    top: 65vh;
 }
 
 .left-circle-2, .left-content-rectangle-2 {
@@ -228,6 +232,7 @@
 /* ###################### */
 
 .right-date-3, .right-circle-3, .right-dashed-line-3, .right-content-rectangle-3 {
+    top: 85vh;
     top: 85vh;
 }
 
@@ -239,6 +244,7 @@
 
 .left-date-4, .left-circle-4, .left-dashed-line-4, .left-content-rectangle-4 {
     top: 105vh;
+    top: 105vh;
 }
 
 .left-circle-4, .left-content-rectangle-4 {
@@ -248,6 +254,7 @@
 /* ###################### */
 
 .right-date-5, .right-circle-5, .right-dashed-line-5, .right-content-rectangle-5 {
+    top: 125vh;
     top: 125vh;
 }
 
@@ -259,6 +266,7 @@
 
 .left-date-6, .left-circle-6, .left-dashed-line-6, .left-content-rectangle-6 {
     top: 145vh;
+    top: 145vh;
 }
 
 .left-circle-6, .left-content-rectangle-6 {
@@ -268,6 +276,7 @@
 /* ###################### */
 
 .right-date-7, .right-circle-7, .right-dashed-line-7, .right-content-rectangle-7 {
+    top: 165vh;
     top: 165vh;
 }
 
@@ -279,6 +288,7 @@
 
 .left-date-8, .left-circle-8, .left-dashed-line-8, .left-content-rectangle-8 {
     top: 185vh;
+    top: 185vh;
 }
 
 .left-circle-8, .left-content-rectangle-8 {
@@ -288,6 +298,7 @@
 /* ###################### */
 
 .right-date-9, .right-circle-9, .right-dashed-line-9, .right-content-rectangle-9 {
+    top: 205vh;
     top: 205vh;
 }
 
