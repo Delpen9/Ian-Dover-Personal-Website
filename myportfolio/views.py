@@ -28,6 +28,16 @@ def bio():
 def timeline():
     projects = [
         {
+            "date": "09-20-2024",
+            "url": "https://github.com/Delpen9/Reinsurance-Case-Study/blob/main/case_study.pdf",
+            "title": "Reinsurance Analysis",
+        },
+        {
+            "date": "07-20-2024",
+            "url": "https://github.com/Delpen9/Argentina-Inflation/blob/main/argentina_analysis_presentation.pdf",
+            "title": "Argentina Inflation",
+        },
+        {
             "date": "07-10-2024",
             "url": "https://www.parchment.com/u/award/ef2f17b678782a1f5b2b442ea0231623",
             "title": "Georgia Tech Grad",

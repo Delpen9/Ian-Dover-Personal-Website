@@ -1,5 +1,5 @@
 body {
-    height: 350vh; /* Makes the page 3 times the viewport's height */
+    height: 450vh; /* Makes the page 3 times the viewport's height */
     position: relative; /* Needed for correct positioning of the line */
     margin: 0; /* Removes default body margins */
     padding: 0; /* Removes default body padding */
@@ -30,7 +30,7 @@ body {
     top: 0vh;
     left: 50%;
     transform: translateX(-50%);
-    height: 350vh;
+    height: 450vh;
     width: 2px;
     background-color: transparent;
     background-image: repeating-linear-gradient(
@@ -280,6 +280,26 @@ body {
 
 .right-circle-7, .right-content-rectangle-7 {
     background-color: rgb(205, 92, 92);
+}
+
+/* ###################### */
+
+.left-date-8, .left-circle-8, .left-dashed-line-8, .left-content-rectangle-8 {
+    top: 330vh;
+}
+
+.left-circle-8, .left-content-rectangle-8 {
+    background-color: rgb(70, 130, 180);
+}
+
+/* ###################### */
+
+.right-date-9, .right-circle-9, .right-dashed-line-9, .right-content-rectangle-9 {
+    top: 370vh;
+}
+
+.right-circle-9, .right-content-rectangle-9 {
+    background-color: rgb(255, 127, 80);
 }
 
 /* ###################### */
