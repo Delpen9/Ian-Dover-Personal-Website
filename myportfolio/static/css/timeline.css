@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 300vh;
+    height: 2500px;
     width: 2px;
     z-index: 0;
 }
