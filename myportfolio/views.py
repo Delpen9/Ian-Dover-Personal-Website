@@ -137,7 +137,6 @@ def resume():
 
 @app.route("/blog")
 def blog():
-    # Example blog posts data (replace with actual database query)
     blog_posts = [
         {
             "title": "ML Model Ownership, Inference Slashing, and Seed Rounds on Crowd-Training Protocol",
