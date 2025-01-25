@@ -3,6 +3,17 @@ html, body {
     overflow-x: hidden;
 }
 
+.larger-font {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+  
+@media (max-width: 768px) {
+    /* Optional: Larger font for smaller screens */
+    .larger-font {
+        font-size: 1.5rem;
+    }
+}
+
 .navbar-font-size {
     font-size: 2rem; /* Larger size for desktop */
 }
