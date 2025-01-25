@@ -80,6 +80,42 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <script>
+        // Add event listeners for toggling the z-index
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+      
+        // Listen for the 'show.bs.collapse' and 'hide.bs.collapse' events from Bootstrap
+        navbarCollapse.addEventListener('show.bs.collapse', () => {
+          navbarCollapse.style.zIndex = '1050'; // Apply high z-index when expanded
+        });
+      
+        navbarCollapse.addEventListener('hide.bs.collapse', () => {
+          navbarCollapse.style.zIndex = ''; // Remove z-index when collapsed
+        });
+      
+        // Additional scroll functionality to collapse on scroll
+        window.addEventListener('scroll', function () {
+          if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); // Collapse the navbar on scroll
+          }
+        });
+    </script>
+
+    <script>
+        // Add event listener for scroll
+        window.addEventListener('scroll', function () {
+          const navbarCollapse = document.getElementById('navbarNav');
+          const navbarToggler = document.querySelector('.navbar-toggler');
+    
+          // Check if the navbar is expanded
+          if (navbarCollapse.classList.contains('show')) {
+            // Collapse the navbar on scroll
+            navbarToggler.click();
+          }
+        });
+    </script>
+
+    <script>
         $(window).scroll(function() {
             var scrollPos = $(this).scrollTop();
             var windowHeight = $(this).height();
@@ -96,13 +132,6 @@
             $('.top-rectangle-1').css('height', newHeightRect1 + 'vh');
             $('.top-rectangle-2').css('height', newHeightRect2 + 'vh');
             $('.top-rectangle-3').css('height', newHeightRect3 + 'vh');
-    
-            // Adjust z-index based on scroll position
-            if (scrollPos > 0) {
-                $('.nav-addon').css('z-index', 10);
-            } else {
-                $('.nav-addon').css('z-index', 1);
-            }
         });
     </script>
 </body>
