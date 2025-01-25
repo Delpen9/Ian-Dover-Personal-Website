@@ -137,11 +137,10 @@ def resume():
 
 @app.route("/blog")
 def blog():
-    # Example blog posts data (replace with actual database query)
     blog_posts = [
         {
             "title": "ML Model Ownership, Inference Slashing, and Seed Rounds on Crowd-Training Protocol",
-            "content": "The Crowd Training Protocol introduces an innovative ownership model for machine learning...",
+            "content": "The Crowd Training Protocol introduces an innovative ownership model for machine learning, rewarding contributors based on their roles as ecosystem supporters, data providers, or computational resource contributors. By leveraging inference slashing, seed rounds, and ownership inflation, the protocol ensures equitable compensation, fosters collaboration, and sustains the development and maintenance of decentralized machine learning models.",
             "date": "January 21, 2025",
             "url": "https://medium.com/@iantdover/ml-model-ownership-inference-slashing-and-seed-rounds-on-crowd-training-protocol-8206ffdf5b81"
         },
