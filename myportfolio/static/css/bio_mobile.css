@@ -75,6 +75,16 @@
         opacity: 0.8; /* Optional: Slight transparency for a soft look */
     }
 
+    .custom-hr {
+        display: block;
+        border: none; /* Remove the default border */
+        border-top: 2px solid #ccc; /* Create a horizontal line */
+        margin-top: 40px auto; /* Add space above and below and center it */
+        margin-bottom: 40px auto; /* Add space above and below and center it */
+        width: 100%; /* Set the width of the line */
+        opacity: 0.8; /* Optional: Slight transparency for a soft look */
+    }
+
     .resume-iframe {
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
