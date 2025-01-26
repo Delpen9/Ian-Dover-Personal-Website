@@ -250,7 +250,7 @@ def papers():
 
     # Pagination variables
     page = request.args.get("page", 1, type=int)  # Get the page number from the query string
-    per_page = 5  # Number of papers per page
+    per_page = 1  # Number of papers per page
     total_papers = len(papers)
     total_pages = (total_papers + per_page - 1) // per_page  # Calculate total pages
 
