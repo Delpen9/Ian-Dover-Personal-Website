@@ -36,7 +36,7 @@
     /* For somewhat wide screens */
     @media (max-aspect-ratio: 10/20) and (max-aspect-ratio: 13/20) {
         .bio_content_positioning {
-            top: 30%;
+            top: 32.5%;
             font-size: 4.5vw;
         }
     }
@@ -44,7 +44,7 @@
     /* For somewhat tall screens */
     @media (max-aspect-ratio: 7/20) and (max-aspect-ratio: 10/20) {
         .bio_content_positioning {
-            top: 27.5%;
+            top: 30.0%;
             font-size: 4.5vw;
         }
     }
@@ -52,7 +52,7 @@
     /* For tall screens */
     @media (max-aspect-ratio: 4/20) and (max-aspect-ratio: 7/20) {
         .bio_content_positioning {
-            top: 25%;
+            top: 27.5%;
             font-size: 4.5vw;
         }
     }
@@ -60,7 +60,7 @@
     /* For exceptionally tall screens */
     @media (max-aspect-ratio: 0) and (max-aspect-ratio: 4/20) {
         .bio_content_positioning {
-            top: 22.5%;
+            top: 25.0%;
             font-size: 4.5vw;
         }
     }
