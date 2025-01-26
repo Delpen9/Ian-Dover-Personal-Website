@@ -36,7 +36,7 @@
     /* For somewhat wide screens */
     @media (max-aspect-ratio: 10/20) and (max-aspect-ratio: 13/20) {
         .bio_content_positioning {
-            top: 27.5%;
+            top: 30%;
             font-size: 4.5vw;
         }
     }
@@ -44,7 +44,7 @@
     /* For somewhat tall screens */
     @media (max-aspect-ratio: 7/20) and (max-aspect-ratio: 10/20) {
         .bio_content_positioning {
-            top: 25%;
+            top: 27.5%;
             font-size: 4.5vw;
         }
     }
@@ -52,7 +52,7 @@
     /* For tall screens */
     @media (max-aspect-ratio: 4/20) and (max-aspect-ratio: 7/20) {
         .bio_content_positioning {
-            top: 22.5%;
+            top: 25%;
             font-size: 4.5vw;
         }
     }
@@ -60,9 +60,19 @@
     /* For exceptionally tall screens */
     @media (max-aspect-ratio: 0) and (max-aspect-ratio: 4/20) {
         .bio_content_positioning {
-            top: 20%;
+            top: 22.5%;
             font-size: 4.5vw;
         }
+    }
+
+    .custom-hr {
+        display: block;
+        border: none; /* Remove the default border */
+        border-top: 2px solid #ccc; /* Create a horizontal line */
+        margin-top: 40px auto; /* Add space above and below and center it */
+        margin-bottom: 40px auto; /* Add space above and below and center it */
+        width: 100%; /* Set the width of the line */
+        opacity: 0.8; /* Optional: Slight transparency for a soft look */
     }
 
     .custom-hr {
@@ -101,4 +111,21 @@
     .content-section {
         display: block;
     }
+
+    .social-media-icon {
+        display: block;
+        margin-top: 1.5vh;
+    }
+
+    /* Add a shadow to the bottom right of the icons */
+    .icon-with-shadow {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+        transition: box-shadow 0.3s ease; /* Smooth shadow effect on hover */
+    }
+
+    /* Optional: Hover effect for a stronger shadow */
+    .icon-with-shadow:hover {
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
 }
