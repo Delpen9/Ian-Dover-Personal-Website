@@ -225,6 +225,41 @@ def blog():
 
     return render_template("blog.html", posts=paginated_posts, page=page, total_pages=total_pages)
 
+@app.route("/papers")
+def papers():
+    papers = [
+        {
+            "title": "Deep Convolutional Neural Network Ensemble for Improved Malaria Parasite Detection",
+            "content": "Abstract—Malaria prognosis, performed through the identi-fication of parasites using microscopy, is a vital step in theearly initiation of treatment. Malaria inducing parasites suchas Plasmodium falciparum are difficult to identify and thus havea high mortality rate. For these reasons, a deep convolutionalneural network algorithm is proposed in this paper to aid inaccurately identifying parasitic cells from red blood smears. Byusing a mixture of machine learning techniques such as transferlearning, a cyclical and constant learning rate, and ensemblemethods, we have developed a model capable of accuratelyidentifying parasitic cells within red blood smears. 14 networkspretrained from the ImageNet database are retrained with thefully connected layers replaced. A cyclical and constant learningrate are used to traverse local minima in each network. Theoutput of each trained neural network is representing a singlevote that is used in the classification process. Majority votingcriteria are applied in the final classification decision betweenthe candidate malaria cells. Several experiments were conductedto evaluate the performance of the proposed model. The NIHMalaria Dataset from the National Institute of Health, a datasetof 27,558 images formed from microscopic patches of red bloodsmears, is used in these experiments. The dataset is segmentedinto 80% training set, 10% validation set, and 10% test set. Thevalidation set is used as the decision metric for choosing ensemblenetwork architectures and the test set is used as the evaluationmetric for each model. Different ensemble network architecturesare experimented with and promising performance is observedon the test dataset with the best models achieving a test accuracybetter than several state-of-the-art methodologies. ",
+            "date": "October 2020",
+            "url": "https://www.researchgate.net/publication/351487626_Deep_Convolutional_Neural_Network_Ensemble_for_Improved_Malaria_Parasite_Detection"
+        },
+        {
+            "title": "FUSED DEEP CONVOLUTIONAL NEURAL NETWORK FOR PRECISION DIAGNOSIS OF COVID-19 USING CHEST X-RAY IMAGES A PREPRINT",
+            "content": "With a Coronavirus disease (COVID-19) case count exceeding 10 million worldwide, there is an increased need for a diagnostic capability. The main variables in increasing diagnostic capability are reduced cost, turnaround or diagnosis time, and upfront equipment cost and accessibility. Two candidates for machine learning COVID-19 diagnosis are Computed Tomography (CT) scans and plain chest X-rays. While CT scans score higher in sensitivity, they have a higher cost, maintenance requirement, and turnaround time as compared to plain chest X-rays. The use of portable chest X-radiograph (CXR) is recommended by the American College of Radiology (ACR) since using CT places a massive burden on radiology services. Therefore, X-ray imagery paired with machine learning techniques is proposed a first-line triage tool for COVID-19 diagnostics. In this paper we propose a computer-aided diagnosis (CAD) to accurately classify chest X-ray scans of COVID-19 and normal subjects by fine-tuning several neural networks (ResNet18, ResNet50, DenseNet201) pre-trained on the ImageNet dataset. These neural networks are fused in a parallel architecture and the voting criteria are applied in the final classification decision between the candidate object classes where the output of each neural network is representing a single vote. Several experiments are conducted on the weakly labeled COVID-19-CT-CXR dataset consisting of 263 COVID-19 CXR images extracted from PubMed Central Open Access subsets combined with 25 normal classification CXR images. These experiments show an optimistic result and a capability of the proposed model to outperforming many state-of-the-art algorithms on several measures. Using k-fold cross-validation and a bagging classifier ensemble, we achieve an accuracy of 99.7% and a sensitivity of 100%.",
+            "date": "November 2020",
+            "url": "https://www.researchgate.net/publication/344324945_FUSED_DEEP_CONVOLUTIONAL_NEURAL_NETWORK_FOR_PRECISION_DIAGNOSIS_OF_COVID-19_USING_CHEST_X-RAY_IMAGES_A_PREPRINT"
+        },
+        {
+            "title": "Data-Over-Sound Robot",
+            "content": "Created a data-over-sound robot.",
+            "date": "June 2020",
+            "url": "https://iestoc.org/index.php/conference/article/view/68"
+        },
+    ]
+
+    # Pagination variables
+    page = request.args.get("page", 1, type=int)  # Get the page number from the query string
+    per_page = 5  # Number of papers per page
+    total_papers = len(papers)
+    total_pages = (total_papers + per_page - 1) // per_page  # Calculate total pages
+
+    # Slice the posts for the current page
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_papers = papers[start:end]
+
+    return render_template("papers.html", posts=paginated_papers, page=page, total_pages=total_pages)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5003))
