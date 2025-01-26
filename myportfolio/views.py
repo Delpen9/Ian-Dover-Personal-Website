@@ -244,7 +244,7 @@ def papers():
             "title": "Data-Over-Sound Robot",
             "content": "Created a data-over-sound robot.",
             "date": "June 2020",
-            "url": "https://iestoc.org/index.php/conference/article/view/68"
+            "url": "https://www.researchgate.net/publication/341936244_Data-Over-Sound_Robot"
         },
     ]
 
