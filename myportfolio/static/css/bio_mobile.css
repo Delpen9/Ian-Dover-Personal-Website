@@ -15,7 +15,7 @@
 
     .bio_content_positioning {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 50%; /* Centers horizontally by setting left to 50% of the viewport width */
         transform: translate(-50%, -50%); /* Moves the carousel back by half its width and height */
         font-size: 4.0vw;
